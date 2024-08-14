@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Encriptador de Texto</h2>
+        <img src="imagenes/imagen1.webp" alt="Imagen de perfil" class="profile-img">        
+        <p class="parrafo">Bienvenido a nuestro encriptador de texto, una herramienta sencilla y efectiva para proteger tus mensajes. Con un método único de sustitución, tus palabras se transforman en códigos secretos, asegurando que solo quien tenga la clave pueda leerlos. Ideal para compartir información privada de manera rápida y segura. ¡Empieza a encriptar tus mensajes hoy mismo!
+        </p>
+        <p class="parrafo1">
+            Mis otras plataformas:
+        </p>
+        <a href="https://github.com/Eliot12370">GitHub
+            <img src="imagenes/GitHub.png" alt="GitHub" class="logo">
+        </a>
+        <a href="https://www.linkedin.com/in/mario-a-s-411a56244/">Linkedin
+                <img src="imagenes/linkedin.webp" alt="Linkedin" class="logo">
+        </a>
+    </div>
+    <div class="chat-container">
+        <div class="chat-window" id="chat-window">
+            <!-- Los mensajes se agregarán aquí -->
+        </div>
+        <textarea id="input-text" placeholder="Escribe tu mensaje, por favor ingresa solo letras minúsculas, sin acentos ni caracteres especiales......"></textarea>
+        <div class="buttons">
+            <button id="encrypt-button" onclick="procesarTexto('encriptar')">Encriptar</button>
+            <button id="decrypt-button" onclick="procesarTexto('desencriptar')">Desencriptar</button>
+            <button id="copy-button" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
